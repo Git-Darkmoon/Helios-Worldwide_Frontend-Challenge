@@ -1,5 +1,7 @@
 # Frontend Developer Quiz Test
 
+![Quizzler OG](https://github.com/user-attachments/assets/720a3c85-6e3e-4725-b0c3-7c5e25434550)
+
 Welcome, developer! 🚀
 
 In this test, we challenge you to showcase your skills by creating a quiz app in React using TailwindCSS and Typescript. We provide you with a prototype link in Figma for reference.
