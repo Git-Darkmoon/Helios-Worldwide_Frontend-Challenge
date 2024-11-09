@@ -29,6 +29,11 @@ function Questionary() {
 
   return (
     <div className="min-h-screen bgQuestionaryPicture grid place-items-center bg-lightBg dark:bg-darkBg p-6">
+      <img
+        src="/images/ForgeQuestionaryLogo.png"
+        className="absolute top-6 right-6"
+        alt="forge logo"
+      />
       <form className="mx-auto max-w-3xl">
         {/* Question Header */}
         <div className="mb-12 text-center">

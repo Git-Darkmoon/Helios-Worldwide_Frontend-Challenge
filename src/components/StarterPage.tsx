@@ -10,8 +10,9 @@ function StarterPage() {
       <div className="relative flex min-h-screen flex-col items-end justify-center px-48">
         <h1 className="text-[280px] font-bebasNeue text-myWhite">QUIZZLER</h1>
         <div className="mb-12 flex items-center gap-2">
-          <span className="text-sm text-myWhite/80">BY:</span>
-          <span className="font-semibold text-myWhite">Forge/</span>
+          <span className="text-sm text-myWhite/80 flex gap-x-3">
+            By: <img src="/images/ForgePurpleLogo.png" alt="forge logo" />
+          </span>
         </div>
         <button
           onClick={startQuiz}
