@@ -6,6 +6,7 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
+    "types": ["@testing-library/jest-dom"],
     "strict": true,
     "noEmit": true
   },

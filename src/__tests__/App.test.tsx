@@ -1,24 +1,24 @@
 import { render, screen, fireEvent } from "@testing-library/react"
-import AppProvider from "../context"
 import App from "../App"
+import Providers from "../providers"
 
 describe("App Component", () => {
   it("renders StarterPage initially", () => {
     render(
-      <AppProvider>
+      <Providers>
         <App />
-      </AppProvider>
+      </Providers>
     )
-    expect(screen.getByText(/Start Quiz/i)).toBeInTheDocument()
+    expect(screen.getByText(/Let's start the quiz/i)).toBeInTheDocument()
   })
 
   it("renders Questionary after starting the quiz", () => {
     render(
-      <AppProvider>
+      <Providers>
         <App />
-      </AppProvider>
+      </Providers>
     )
-    fireEvent.click(screen.getByText(/Start Quiz/i))
+    fireEvent.click(screen.getByText(/Let's start the quiz/i))
     expect(screen.getByText(/QUESTION/i)).toBeInTheDocument()
   })
 })
