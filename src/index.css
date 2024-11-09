@@ -20,3 +20,24 @@
   src: url("/fonts/Sora-VariableFont_wght.woff") format("woff");
   font-style: normal;
 }
+
+.bgStarterPagePicture {
+  background-image: url("/images/starterPageBg.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.bgQuestionaryPicture {
+  background-image: url("/images/questionaryBg.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.bgResultsPagePicture {
+  background-image: url("/images/starterPageBg.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}

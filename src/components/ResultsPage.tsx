@@ -8,7 +8,7 @@ function ResultsPage() {
   }
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex bgResultsPagePicture min-h-screen">
       {/* Left Section */}
       <div className="relative w-3/5 flex flex-col items-center justify-center bg-primary p-12">
         {/* Geometric Lines */}

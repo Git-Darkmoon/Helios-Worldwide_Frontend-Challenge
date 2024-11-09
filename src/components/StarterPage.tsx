@@ -5,15 +5,7 @@ function StarterPage() {
   const { startQuiz } = useGlobalContext()
 
   return (
-    <div className="relative min-h-screen bg-primary">
-      {/* Geometric Lines Pattern - Using pseudo-elements for lines */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute left-0 top-1/4 h-px w-full rotate-45 bg-white/10" />
-        <div className="absolute left-1/4 top-0 h-full w-px rotate-45 bg-white/10" />
-        <div className="absolute right-1/4 top-0 h-full w-px -rotate-45 bg-white/10" />
-        <div className="absolute right-0 bottom-1/4 h-px w-full -rotate-45 bg-white/10" />
-      </div>
-
+    <div className="relative bgStarterPagePicture min-h-screen bg-primary">
       {/* Content */}
       <div className="relative flex min-h-screen flex-col items-end justify-center px-48">
         <h1 className="text-[280px] font-bebasNeue text-myWhite">QUIZZLER</h1>

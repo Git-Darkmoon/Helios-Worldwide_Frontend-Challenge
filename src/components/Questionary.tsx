@@ -28,14 +28,14 @@ function Questionary() {
   if (questionIndex === 9) return <ResultsPage />
 
   return (
-    <div className="min-h-screen grid place-items-center bg-gray-100/90 p-6">
+    <div className="min-h-screen bgQuestionaryPicture grid place-items-center bg-lightBg dark:bg-darkBg p-6">
       <form className="mx-auto max-w-3xl">
         {/* Question Header */}
         <div className="mb-12 text-center">
-          <h1 className="mb-4 text-8xl font-bebasNeue font-bold tracking-tight text-primary">
+          <h1 className="mb-4 text-8xl font-bebasNeue font-bold tracking-tight text-primary dark:text-myWhite">
             QUESTION {questionIndex + 1}/10
           </h1>
-          <p className="text-4xl text-primary">{question}</p>
+          <p className="text-4xl text-primary dark:text-myWhite">{question}</p>
         </div>
 
         {/* Options */}
