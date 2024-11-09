@@ -1,0 +1,62 @@
+import { useGlobalContext } from "../context"
+import AnswerOption from "./AnswerOption"
+import NextButton from "./NextButton"
+import ResultsPage from "./ResultsPage"
+
+function Questionary() {
+  const {
+    questionIndex,
+    question,
+    answers,
+    selectedAnswer,
+    setSelectedAnswer,
+  } = useGlobalContext()
+
+  const possibleAnswers = answers
+    ? Object.entries(answers).filter(([, value]) => value !== null)
+    : []
+
+  const answerLabels = {
+    answer_a: "A",
+    answer_b: "B",
+    answer_c: "C",
+    answer_d: "D",
+    answer_e: "E",
+    answer_f: "F",
+  }
+
+  if (questionIndex === 9) return <ResultsPage />
+
+  return (
+    <div className="min-h-screen grid place-items-center bg-gray-100/90 p-6">
+      <form className="mx-auto max-w-3xl">
+        {/* Question Header */}
+        <div className="mb-12 text-center">
+          <h1 className="mb-4 text-8xl font-bebasNeue font-bold tracking-tight text-primary">
+            QUESTION {questionIndex + 1}/10
+          </h1>
+          <p className="text-4xl text-primary">{question}</p>
+        </div>
+
+        {/* Options */}
+        <div className="space-y-4">
+          {possibleAnswers.map(([answerOption, answerText]) => {
+            return (
+              <AnswerOption
+                key={answerOption}
+                answerOption={answerOption}
+                answerText={answerText}
+                selectedAnswer={selectedAnswer}
+                setSelectedAnswer={setSelectedAnswer}
+                answerLabels={answerLabels}
+              />
+            )
+          })}
+        </div>
+
+        <NextButton />
+      </form>
+    </div>
+  )
+}
+export default Questionary
